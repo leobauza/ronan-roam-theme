@@ -23,6 +23,10 @@
 
   /* Sidebar Content */
   & .roam-sidebar-container .roam-sidebar-content {
+    & .top-row {
+      @apply p-4;
+    }
+
     & .top-row, & .top-row:hover {
       @apply bg-blue-50;
 
@@ -69,11 +73,11 @@
   }
 }
 
-/* Less Specific Rules */
+/* @TODO (need this?) Less Specific Rules */
 .roam-sidebar-container {
 }
 
-/* Even Less Specific Rules */
+/* @TODO (need this?) Even Less Specific Rules */
 .roam-sidebar-content {
 }
 
