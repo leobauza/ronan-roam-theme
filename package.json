@@ -1,0 +1,17 @@
+{
+  "name": "ronan-roam-theme",
+  "version": "0.1.0",
+  "description": "A theme for roam",
+  "main": "main.css",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "postcss src/theme.css --config postcss.config.js -o main.css"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
