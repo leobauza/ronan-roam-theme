@@ -551,3 +551,48 @@ span.checkmark {
   opacity: 0.6;
   color: var(--c2);
 }
+
+
+/* MY ADDITIONS! */
+/* :root {
+  --font-size: 15px;
+  --c4: #2d2d2d;
+} */
+
+.check-container {
+  height: 10px;
+}
+
+.rm-zoom .parent-path-wrapper .rm-page-ref.rm-page-ref--tag {
+  border: none;
+  border-radius: 0;
+}
+
+.rm-page-ref.rm-page-ref--tag {
+  font-size: 14px;
+  color: rgba(55, 65, 81, 1);
+  background: rgba(240, 240, 240, 1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color .3s ease-in;
+}
+
+.rm-page-ref.rm-page-ref--tag:hover[data-tag] {
+  background: rgba(238,242,255,0);
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="!"] {
+  background: #FDFDEC;
+  color: #6B3E1D;
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="~"] {
+  background: #FBF2F2;
+  color: #8F2C26
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="@"] {
+  background: rgba(238,242,255,1);
+  color: rgba(67,56,202,1);
+}

@@ -1,9 +1,13 @@
 :root {
-  --font-size: 15.5px;
+  /* my additions */
+  --font-size: 15px;
+  --c4: #2d2d2d;
+  /* end my additions */
+  /* --font-size: 15.5px; */
   --c1: hsl(206, 10%, 16%);
   --c2: hsl(206, 12%, 40%);
   --c3: hsl(206, 16%, 60%);
-  --c4: hsl(206, 18%, 70%);
+  /* --c4: hsl(206, 18%, 70%); */
   --c5: hsl(206, 20%, 87%);
   --accent-color: hsl(203, 74%, 42%);
   --selection-color: hsl(203, 100%, 74%);
