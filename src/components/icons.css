@@ -1,0 +1,15 @@
+.bp3-icon-calendar::before {
+  content: '📅';
+}
+
+.bp3-icon-graph::before {
+  content: '📊';
+}
+
+.bp3-icon-list::before {
+  content: '📘';
+}
+
+.bp3-icon-star::before {
+  content: '⭐';
+}

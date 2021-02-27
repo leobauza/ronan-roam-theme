@@ -1,18 +1,69 @@
 .roam-body .roam-app {
   /* Sidebar Container */
   & .roam-sidebar-container {
-    background-color: var(--bg-white);
+    @apply bg-white;
   }
+
+  /* Sidebar Container Open Only */
+  & .roam-sidebar-container[style='left: 0px; top: 0px; bottom: 0px;'] {
+    & .roam-sidebar-content {
+      @apply border-r border-gray-200;
+    }
+  }
+
+  /* Sidebar Container Hidden Only */
+  & .roam-sidebar-container:not([style='left: 0px; top: 0px; bottom: 0px;']) {
+    box-shadow: none!important;
+
+    & .roam-sidebar-content {
+      @apply shadow-lg;
+      @apply rounded-r-md;
+    }
+  }
+
   /* Sidebar Content */
   & .roam-sidebar-container .roam-sidebar-content {
-    .top-row {
+    & .top-row, & .top-row:hover {
+      @apply bg-blue-50;
+
+      & .rm-db-title, & .rm-db-title .expand-icon {
+        @apply text-blue-700;
+      }
     }
 
-    .log-button {
-      color: var(--bg-gray-500);
+    & .log-button {
+      @apply transition-colors duration-200;
+      @apply text-gray-500;
+      @apply text-sm;
+      @apply py-4 px-5;
 
       &:hover {
-        color: var(--bg-gray-900);
+        @apply bg-blue-50;
+        @apply text-blue-700;
+      }
+    }
+
+    & .starred-pages-wrapper {
+      @apply border-t border-gray-200;
+
+      & .flex-h-box {
+        @apply pt-2;
+      }
+
+      & .starred-pages {
+        @apply pt-2;
+
+        & .page {
+          @apply rounded-md;
+          @apply text-gray-500;
+          @apply transition-colors duration-200;
+          @apply py-2 px-4;
+
+          &:hover {
+            @apply bg-blue-50;
+            @apply text-blue-700;
+          }
+        }
       }
     }
   }
@@ -26,41 +77,16 @@
 .roam-sidebar-content {
 }
 
+/* Starred Pages */
+.starred-pages-wrapper {
+  /* Get rid of these weird dividers */
+  & > div:first-child,
+  & > div:nth-child(2) {
+    display: none;
+  }
+}
+
 /* Hide logo */
 #roam-sidebar-logo {
   display: none;
 }
-
-/* .roam-topbar {
-  background: var(--page-background-color) !important;
-  border-bottom: none !important;
-}
-.roam-topbar input#find-or-create-input {
-  box-shadow: none !important;
-  border: 1px solid var(--search-border-color) !important;
-}
-
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
-.bp3-minimal > div {
-  color: var(--c2) !important;
-  font-size: 13px !important;
-}
-
-.roam-sidebar-content {
-  padding: 0 !important;
-}
-.roam-sidebar-content > div:not(.log-button):not(:first-child) {
-  padding: 0 !important;
-}
-.roam-sidebar-content > div:first-child {
-  padding-bottom: 18px !important;
-}
-.roam-sidebar-content div {
-  line-height: 1.2 !important;
-}
-.roam-sidebar-content .rm-db-title {
-  margin-top: 0 !important;
-  color: var(--c2) !important;
-} */

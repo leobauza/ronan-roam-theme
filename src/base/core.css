@@ -1,9 +1,29 @@
-.roam-body {
+/* Reset font-size globally */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
 
+/* For tailwind borders to work */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+body,
+div,
+textarea
+/* .level2 */ {
+  @apply font-sans;
+}
+
+.roam-body {
 }
 
 .roam-app {
-  
 }
 
 /* body,
