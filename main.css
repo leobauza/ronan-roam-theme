@@ -1,9 +1,13 @@
 :root {
-  --font-size: 15.5px;
+  /* my additions */
+  --font-size: 15px;
+  --c4: #2d2d2d;
+  /* end my additions */
+  /* --font-size: 15.5px; */
   --c1: hsl(206, 10%, 16%);
   --c2: hsl(206, 12%, 40%);
   --c3: hsl(206, 16%, 60%);
-  --c4: hsl(206, 18%, 70%);
+  /* --c4: hsl(206, 18%, 70%); */
   --c5: hsl(206, 20%, 87%);
   --accent-color: hsl(203, 74%, 42%);
   --selection-color: hsl(203, 100%, 74%);
@@ -347,24 +351,24 @@ div.roam-article .rm-level3 span > a.rm-alias--external:after {
 }
 
 .bp3-input {
-  color: hsl(206, 18%, 70%) !important;
+  color: #2d2d2d !important;
   color: var(--c4) !important;
   background: #ffffff !important;
   background: var(--main-area-background-color) !important;
 }
 
 .bp3-input::-moz-placeholder {
-  color: hsl(206, 18%, 70%) !important;
+  color: #2d2d2d !important;
   color: var(--c4) !important;
 }
 
 .bp3-input:-ms-input-placeholder {
-  color: hsl(206, 18%, 70%) !important;
+  color: #2d2d2d !important;
   color: var(--c4) !important;
 }
 
 .bp3-input::placeholder {
-  color: hsl(206, 18%, 70%) !important;
+  color: #2d2d2d !important;
   color: var(--c4) !important;
 }
 
@@ -463,7 +467,7 @@ span.checkmark {
 }
 
 .rm-reference-item .rm-block-text {
-  font-size: 15.5px !important;
+  font-size: 15px !important;
   font-size: var(--font-size) !important;
 }
 
@@ -620,7 +624,7 @@ span.checkmark {
 
 .rm-block-text {
   max-width: 660px !important;
-  font-size: 15.5px !important;
+  font-size: 15px !important;
   font-size: var(--font-size) !important;
 }
 
@@ -638,7 +642,7 @@ span.checkmark {
 }
 
 .rm-multibar:hover {
-  border-right-color: hsl(206, 18%, 70%) !important;
+  border-right-color: #2d2d2d !important;
   border-right-color: var(--c4) !important;
 }
 
@@ -736,4 +740,49 @@ span.checkmark {
   opacity: 0.6;
   color: hsl(206, 12%, 40%);
   color: var(--c2);
+}
+
+/* MY ADDITIONS! */
+
+/* :root {
+  --font-size: 15px;
+  --c4: #2d2d2d;
+} */
+
+.check-container {
+  height: 10px;
+}
+
+.rm-zoom .parent-path-wrapper .rm-page-ref.rm-page-ref--tag {
+  border: none;
+  border-radius: 0;
+}
+
+.rm-page-ref.rm-page-ref--tag {
+  font-size: 14px;
+  color: rgba(55, 65, 81, 1);
+  background: rgba(240, 240, 240, 1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color .3s ease-in;
+}
+
+.rm-page-ref.rm-page-ref--tag:hover[data-tag] {
+  background: rgba(238,242,255,0);
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="!"] {
+  background: #FDFDEC;
+  color: #6B3E1D;
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="~"] {
+  background: #FBF2F2;
+  color: #8F2C26
+}
+
+.rm-page-ref.rm-page-ref--tag[data-tag="@"] {
+  background: rgba(238,242,255,1);
+  color: rgba(67,56,202,1);
 }
