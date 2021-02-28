@@ -1,4 +1,5 @@
 :root {
+  /* icons */
   --icon-cal: '📅';
   --icon-graph: '🧭';
   --icon-list: '📘';
@@ -19,7 +20,12 @@
   --icon-export: '📤';
   --icon-eye-open: '👀';
   /* shortcuts */
-  --shortcut-at: 'Read';
+  --shortcut-at: 'Read/Watched';
+  --shortcut-bang: 'Currently';
+  --shortcut-tilde: 'Unread/Not Watched';
+  --shortcut-plus: 'Active Project';
+  --shortcut-percent: 'Project Needs Definition';
+  --shortcut-amp: 'Upcoming Project';
 }
 
 @media (prefers-color-scheme: dark) {

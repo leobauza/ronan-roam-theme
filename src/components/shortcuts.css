@@ -1,4 +1,5 @@
 /** 
+ * Shortcuts
  * See: links.css
  *
  * These are shorthand for various tags:
@@ -6,30 +7,113 @@
  * @ = Read / Watched
  * ! = Currently
  * ~ = Unread / Not Watched
- * $ = Active Project
+ * + = Active Project
  * % = Project Needs Definition
  * & = Upcoming Project
  */
 
-/* Shortcuts */
-.rm-page-ref--tag[data-tag='@'] {
+.rm-page-ref--tag[data-tag='@'],
+.rm-page-ref--tag[data-tag='!'],
+.rm-page-ref--tag[data-tag='~'],
+.rm-page-ref--tag[data-tag='+'],
+.rm-page-ref--tag[data-tag='%'],
+.rm-page-ref--tag[data-tag='&'] {
   @apply inline-block;
-  @apply bg-green-50;
-  @apply text-green-700;
-  
+
   text-indent: -9999px;
   line-height: 0;
 
   &::after {
     @apply block;
 
-    content: var(--shortcut-at);
     line-height: initial;
     text-indent: 0;
   }
 
   &:hover {
     @apply text-white;
-    @apply bg-green-700;
+  }
+}
+
+/* Read / Watched */
+.rm-page-ref--tag[data-tag='@'] {
+  @apply bg-blue-50;
+  @apply text-blue-700;
+
+  &::after {
+    content: var(--shortcut-at);
+  }
+
+  &:hover {
+    @apply bg-blue-700;
+  }
+}
+
+/* Currently */
+.rm-page-ref--tag[data-tag='!'] {
+  @apply bg-yellow-50;
+  @apply text-yellow-700;
+  &::after {
+    content: var(--shortcut-bang);
+  }
+
+  &:hover {
+    @apply bg-yellow-700;
+  }
+}
+
+/* Unread / Not Watched */
+.rm-page-ref--tag[data-tag='~'] {
+  @apply bg-red-50;
+  @apply text-red-700;
+
+  &::after {
+    content: var(--shortcut-tilde);
+  }
+
+  &:hover {
+    @apply bg-red-700;
+  }
+}
+
+/* Active Project */
+.rm-page-ref--tag[data-tag='+'] {
+  @apply bg-blue-50;
+  @apply text-blue-700;
+
+  &::after {
+    content: var(--shortcut-plus);
+  }
+
+  &:hover {
+    @apply bg-blue-700;
+  }
+}
+
+/* Project Needs Definition */
+.rm-page-ref--tag[data-tag='%'] {
+  @apply bg-red-50;
+  @apply text-red-700;
+
+  &::after {
+    content: var(--shortcut-percent);
+  }
+
+  &:hover {
+    @apply bg-red-700;
+  }
+}
+
+/* Upcoming Project */
+.rm-page-ref--tag[data-tag='&'] {
+  @apply bg-yellow-50;
+  @apply text-yellow-700;
+
+  &::after {
+    content: var(--shortcut-amp);
+  }
+
+  &:hover {
+    @apply bg-yellow-700;
   }
 }
