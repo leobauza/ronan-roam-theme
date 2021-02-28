@@ -1,1 +1,22 @@
-/* @TODO all links (references and external) */
+.rm-page-ref--tag {
+  @apply transition-colors duration-200;
+  @apply bg-blue-50;
+  @apply text-blue-700;
+  @apply py-1 px-2;
+  @apply rounded-md;
+
+  &:hover {
+    @apply text-white;
+    @apply bg-blue-700;
+    @apply no-underline;
+  }
+}
+
+a.rm-alias.rm-alias--external {
+  &::after {
+    @apply inline-block;
+    @apply ml-1;
+
+    content: '🔗';
+  }
+}

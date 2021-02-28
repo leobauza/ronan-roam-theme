@@ -66,6 +66,11 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@viget/tailwindcss-plugins@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@viget/tailwindcss-plugins/-/tailwindcss-plugins-0.0.11.tgz#daefad51ac2339a7dc970b15cedb5e6ede2585b0"
+  integrity sha512-Bju0IcZikzXLXXZ5h/AU672ECadgW93BDWYyd6rhEkWSKAESsy99iEZ2bqLmwYqyDOLJXRbMHzRnyHmRyDKC9Q==
+
 acorn-node@^1.6.1:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/acorn-node/-/acorn-node-1.8.2.tgz#114c95d64539e53dede23de8b9d96df7c7ae2af8"

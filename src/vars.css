@@ -6,7 +6,7 @@
   --icon-search: '🔍';
   --icon-filter: '🎛';
   --icon-star-empty: '🔖';
-  --icon-more: '🍔';
+  --icon-more: '⚙️';
   --icon-help: '❓';
   --icon-menu-closed: '👈🏼';
   --icon-menu-open: '👉🏼';
@@ -18,6 +18,8 @@
   --icon-trash: '🗑';
   --icon-export: '📤';
   --icon-eye-open: '👀';
+  /* shortcuts */
+  --shortcut-at: 'Read';
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,3 +1,5 @@
+const plugins = require('@viget/tailwindcss-plugins')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -7,5 +9,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [plugins.sr],
 }
