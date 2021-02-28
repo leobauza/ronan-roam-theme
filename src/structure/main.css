@@ -1,3 +1,31 @@
 .roam-main {
+  @apply border-t border-gray-200;
+  @apply bg-gray-50;
+}
 
+/* Top Bar */
+.rm-files-dropzone {
+  @apply w-auto h-auto;
+  flex: 0 0 auto;
+}
+
+.rm-topbar {
+  @apply py-4 px-6;
+  @apply h-auto;
+}
+
+.roam-body .roam-app {
+  /* Make sure body plays nice with the top bar */
+  & .roam-body-main {
+    @apply px-4 pb-4;
+    flex: 1 1 auto;
+
+    /* Make main area look like a card */
+    & > div {
+      @apply bg-white;
+      @apply rounded-lg;
+      @apply shadow-lg;
+      @apply border border-gray-200;
+    }
+  }
 }
