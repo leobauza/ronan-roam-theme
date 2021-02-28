@@ -26,5 +26,9 @@
       @apply shadow-lg;
       @apply border border-gray-200;
     }
+
+    & .rm-all-pages {
+      @apply overflow-hidden;
+    }
   }
 }
