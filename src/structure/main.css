@@ -1,5 +1,4 @@
 .roam-main {
-  @apply border-t border-gray-200;
   @apply bg-gray-50;
 }
 
@@ -18,7 +17,7 @@
   /* Make sure body plays nice with the top bar */
   & .roam-body-main {
     @apply px-4 pb-4;
-    flex: 1 1 auto;
+    flex: 0 0 calc(100% - 62px);
 
     /* Make main area look like a card */
     & > div {
