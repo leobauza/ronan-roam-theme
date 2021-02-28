@@ -1,5 +1,5 @@
 /** 
- * Shortcuts
+ * Shorthands
  * See: links.css
  *
  * These are shorthand for various tags:
@@ -41,7 +41,7 @@
   @apply text-blue-700;
 
   &::after {
-    content: var(--shortcut-at);
+    content: var(--shorthand-at);
   }
 
   &:hover {
@@ -54,7 +54,7 @@
   @apply bg-yellow-50;
   @apply text-yellow-700;
   &::after {
-    content: var(--shortcut-bang);
+    content: var(--shorthand-bang);
   }
 
   &:hover {
@@ -68,7 +68,7 @@
   @apply text-red-700;
 
   &::after {
-    content: var(--shortcut-tilde);
+    content: var(--shorthand-tilde);
   }
 
   &:hover {
@@ -82,7 +82,7 @@
   @apply text-blue-700;
 
   &::after {
-    content: var(--shortcut-plus);
+    content: var(--shorthand-plus);
   }
 
   &:hover {
@@ -96,7 +96,7 @@
   @apply text-red-700;
 
   &::after {
-    content: var(--shortcut-percent);
+    content: var(--shorthand-percent);
   }
 
   &:hover {
@@ -110,7 +110,7 @@
   @apply text-yellow-700;
 
   &::after {
-    content: var(--shortcut-amp);
+    content: var(--shorthand-amp);
   }
 
   &:hover {

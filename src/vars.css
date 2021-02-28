@@ -10,8 +10,8 @@
   --icon-star-empty: '🔖';
   --icon-more: '⚙️';
   --icon-help: '❓';
-  --icon-menu-closed: '👈🏼';
-  --icon-menu-open: '👉🏼';
+  --icon-menu-closed: '⬅️';
+  --icon-menu-open: '➡️';
   --icon-menu: '🍔';
   --icon-cross: '❌';
   --icon-pin: '📌';
@@ -20,13 +20,13 @@
   --icon-trash: '🗑';
   --icon-export: '📤';
   --icon-eye-open: '👀';
-  /* shortcuts */
-  --shortcut-at: 'Read/Watched';
-  --shortcut-bang: 'Currently';
-  --shortcut-tilde: 'Unread/Not Watched';
-  --shortcut-plus: 'Active Project';
-  --shortcut-percent: 'Project Needs Definition';
-  --shortcut-amp: 'Upcoming Project';
+  /* shorthands */
+  --shorthand-at: 'Read/Watched';
+  --shorthand-bang: 'Currently';
+  --shorthand-tilde: 'Unread/Not Watched';
+  --shorthand-plus: 'Active Project';
+  --shorthand-percent: 'Project Needs Definition';
+  --shorthand-amp: 'Upcoming Project';
 }
 
 @media (prefers-color-scheme: dark) {
