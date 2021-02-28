@@ -1,15 +1,75 @@
 .bp3-icon-calendar::before {
-  content: '📅';
+  content: var(--icon-cal);
 }
 
 .bp3-icon-graph::before {
-  content: '🧭';
+  content: var(--icon-graph);
 }
 
 .bp3-icon-list::before {
-  content: '📘';
+  content: var(--icon-list);
 }
 
 .bp3-icon-star::before {
-  content: '⭐';
+  content: var(--icon-star);
+}
+
+.bp3-icon-search::before {
+  content: var(--icon-search);
+}
+
+.bp3-icon-filter::before {
+  content: var(--icon-filter);
+}
+
+.bp3-icon-star-empty::before {
+  content: var(--icon-star-empty);
+}
+
+.bp3-icon-more::before {
+  content: var(--icon-more);
+}
+
+.bp3-icon-help::before {
+  content: var(--icon-help);
+}
+
+.bp3-icon-menu-closed::before {
+  content: var(--icon-menu-closed);
+}
+
+.bp3-icon-menu-open::before {
+  content: var(--icon-menu-open);
+}
+
+.bp3-icon-menu::before {
+  content: var(--icon-menu);
+}
+
+.bp3-icon-cross::before {
+  content: var(--icon-cross);
+}
+
+.bp3-icon-pin::before {
+  content: var(--icon-pin);
+}
+
+.bp3-icon-video::before {
+  content: var(--icon-video);
+}
+
+.bp3-icon-chat::before {
+  content: var(--icon-chat);
+}
+
+.bp3-icon-trash::before {
+  content: var(--icon-trash);
+}
+
+.bp3-icon-export::before {
+  content: var(--icon-export);
+}
+
+.bp3-icon-eye-open::before {
+  content: var(--icon-eye-open);
 }
