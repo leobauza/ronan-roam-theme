@@ -1,3 +1,52 @@
+/* Ref Links */
+.rm-page-ref__brackets {
+  @apply text-gray-200;
+}
+
+.rm-page-ref--link,
+.rm-page-ref--namespace {
+  @apply transition-all duration-500;
+
+  background-position: 0 0.9em;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+
+  &:hover {
+    @apply no-underline;
+
+    background-size: 100% 7px;
+  }
+}
+
+.rm-page-ref--link {
+  @apply text-indigo-500;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.indigo.100') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-indigo-900;
+  }
+}
+
+.rm-page-ref--namespace {
+  @apply text-red-500;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-red-900;
+  }
+}
+
+/* Ref Tags */
 .rm-page-ref--tag {
   @apply transition-colors duration-200;
   @apply bg-gray-50;
@@ -12,13 +61,14 @@
   }
 }
 
+/* External Links */
 a.rm-alias.rm-alias--external {
   @apply transition-all duration-500;
-  @apply text-blue-500;
+  @apply text-indigo-500;
 
   background-image: linear-gradient(
     to right,
-    theme('textColor.blue.100') 100%,
+    theme('textColor.indigo.100') 100%,
     transparent 0%
   );
   background-position: 0 0.9em;
@@ -26,7 +76,7 @@ a.rm-alias.rm-alias--external {
   background-size: 0% 4px;
 
   &:hover {
-    @apply text-blue-900;
+    @apply text-indigo-900;
     @apply no-underline;
 
     background-size: 100% 7px;

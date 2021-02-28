@@ -12,6 +12,13 @@
  * & = Upcoming Project
  */
 
+/* Tags and links shared styles (text replacing) */
+[data-link-title='@'] .rm-page-ref--link,
+[data-link-title='!'] .rm-page-ref--link,
+[data-link-title='~'] .rm-page-ref--link,
+[data-link-title='+'] .rm-page-ref--link,
+[data-link-title='%'] .rm-page-ref--link,
+[data-link-title='&'] .rm-page-ref--link,
 .rm-page-ref--tag[data-tag='@'],
 .rm-page-ref--tag[data-tag='!'],
 .rm-page-ref--tag[data-tag='~'],
@@ -29,7 +36,15 @@
     line-height: initial;
     text-indent: 0;
   }
+}
 
+/* Only tags */
+.rm-page-ref--tag[data-tag='@'],
+.rm-page-ref--tag[data-tag='!'],
+.rm-page-ref--tag[data-tag='~'],
+.rm-page-ref--tag[data-tag='+'],
+.rm-page-ref--tag[data-tag='%'],
+.rm-page-ref--tag[data-tag='&'] {
   &:hover {
     @apply text-white;
   }
@@ -49,16 +64,45 @@
   }
 }
 
+[data-link-title='@'] .rm-page-ref--link {
+  @apply text-blue-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-at);
+  }
+}
+
 /* Currently */
 .rm-page-ref--tag[data-tag='!'] {
   @apply bg-yellow-50;
   @apply text-yellow-700;
+  
   &::after {
     content: var(--shorthand-bang);
   }
 
   &:hover {
     @apply bg-yellow-700;
+  }
+}
+
+[data-link-title='!'] .rm-page-ref--link {
+  @apply text-yellow-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.yellow.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-bang);
   }
 }
 
@@ -76,6 +120,20 @@
   }
 }
 
+[data-link-title='~'] .rm-page-ref--link {
+  @apply text-red-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-tilde);
+  }
+}
+
 /* Active Project */
 .rm-page-ref--tag[data-tag='+'] {
   @apply bg-blue-50;
@@ -87,6 +145,20 @@
 
   &:hover {
     @apply bg-blue-700;
+  }
+}
+
+[data-link-title='+'] .rm-page-ref--link {
+  @apply text-blue-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-plus);
   }
 }
 
@@ -104,6 +176,20 @@
   }
 }
 
+[data-link-title='%'] .rm-page-ref--link {
+  @apply text-red-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-percent);
+  }
+}
+
 /* Upcoming Project */
 .rm-page-ref--tag[data-tag='&'] {
   @apply bg-yellow-50;
@@ -115,5 +201,19 @@
 
   &:hover {
     @apply bg-yellow-700;
+  }
+}
+
+[data-link-title='&'] .rm-page-ref--link {
+  @apply text-yellow-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.yellow.100') 100%,
+    transparent 0%
+  );
+
+  &::after {
+    content: var(--shorthand-amp);
   }
 }
