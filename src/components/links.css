@@ -46,6 +46,41 @@
   }
 }
 
+/* Ref Attr */
+.rm-attr-ref {
+  @apply relative;
+  @apply inline-block;
+  @apply pl-2 pr-1;
+  @apply mr-1;
+  @apply text-gray-700;
+
+  &::before {
+    @apply absolute;
+    @apply block;
+    @apply bg-gray-200;
+    @apply border-l border-r border-t border-gray-200;
+    @apply top-0 left-0;
+    @apply transform skew-x-20;
+    @apply w-full h-1/2;
+    @apply bg-opacity-20;
+
+    content: '';
+  }
+
+  &::after {
+    @apply absolute;
+    @apply block;
+    @apply border-l border-r border-b border-gray-200;
+    @apply bg-gray-200;
+    @apply bottom-0 left-0;
+    @apply transform -skew-x-20;
+    @apply w-full h-1/2;
+    @apply bg-opacity-20;
+
+    content: '';
+  }
+}
+
 /* Ref Tags */
 .rm-page-ref--tag {
   @apply transition-colors duration-200;
