@@ -1,4 +1,5 @@
 :root {
+  --graph-overview-display: block;
   /* icons */
   --icon-cal: '📅';
   --icon-graph: '🧭';

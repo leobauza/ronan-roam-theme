@@ -13,6 +13,25 @@
 }
 
 a.rm-alias.rm-alias--external {
+  @apply transition-all duration-500;
+  @apply text-blue-500;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.100') 100%,
+    transparent 0%
+  );
+  background-position: 0 0.9em;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+
+  &:hover {
+    @apply text-blue-900;
+    @apply no-underline;
+
+    background-size: 100% 7px;
+  }
+
   &::after {
     @apply inline-block;
     @apply ml-1;

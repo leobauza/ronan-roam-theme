@@ -42,6 +42,11 @@
         @apply bg-blue-50;
         @apply text-blue-700;
       }
+
+      /* Graph Overview */
+      &:nth-child(3) {
+        display: var(--graph-overview-display);
+      }
     }
 
     & .starred-pages-wrapper {
