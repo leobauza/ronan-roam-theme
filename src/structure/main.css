@@ -22,7 +22,7 @@
     /* Make main area look like a card */
     & > div {
       @apply bg-white;
-      @apply rounded-lg;
+      @apply rounded-md;
       @apply shadow-lg;
       @apply border border-gray-200;
     }

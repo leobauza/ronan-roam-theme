@@ -8,8 +8,17 @@
   }
 }
 
-.rm-title-display {
+/* Article title */
+.rm-title-display,
+.rm-title-editing-display {
   @apply font-light;
   @apply text-xl;
+  @apply tracking-wider;
+}
+
+.rm-title-textarea {
+  @apply px-2;
+  @apply rounded-md;
+  @apply shadow-outline;
   @apply tracking-wider;
 }

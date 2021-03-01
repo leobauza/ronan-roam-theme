@@ -1,6 +1,41 @@
-.roam-block {
+/* Focus state for block input */
+textarea.rm-block-input {
+  @apply shadow-outline;
+  @apply px-2;
+  @apply rounded-md;
 }
 
-.controls,
-.rm-block__controls {
+/* Expand icon and bullet */
+.block-expand {
+  & .bp3-icon-caret-down {
+    &::before {
+      @apply text-gray-500;
+    }
+  }
+}
+
+.rm-bullet {
+  &.rm-bullet--closed {
+    & .rm-bullet__inner {
+      @apply border-gray-200;
+    }
+  }
+}
+
+.rm-bullet__inner {
+  @apply bg-gray-500;
+}
+
+/* Change color and increase touch area of collapse lines */
+.rm-multibar {
+  @apply border-gray-200;
+
+  left: -8px;
+  width: calc(1px - -8px);
+
+  &:hover {
+    @apply border-gray-500;
+
+    width: calc(1px + calc(1px - -8px));
+  }
 }
