@@ -19,6 +19,7 @@
       & .rm-db-title .expand-icon {
         @apply transition-colors duration-200;
         @apply text-gray-500;
+        @apply font-light;
       }
     }
 
@@ -32,10 +33,12 @@
     }
 
     & .log-button {
+      @apply font-black;
       @apply py-4 px-5;
       @apply rounded-r-md;
       @apply text-gray-500;
-      @apply text-sm;
+      @apply text-xs;
+      @apply tracking-wider;
       @apply transition-colors duration-200;
 
       &:hover {
@@ -50,8 +53,15 @@
     }
 
     & .starred-pages-wrapper {
-      & .flex-h-box {
+      & > .flex-h-box {
         @apply pt-2;
+
+        & span {
+          @apply font-black;
+          @apply text-gray-500;
+          @apply text-xs;
+          @apply tracking-wider;
+        }
       }
 
       & .starred-pages {
@@ -71,14 +81,6 @@
       }
     }
   }
-}
-
-/* @TODO (need this?) Less Specific Rules */
-.roam-sidebar-container {
-}
-
-/* @TODO (need this?) Even Less Specific Rules */
-.roam-sidebar-content {
 }
 
 /* Starred Pages */

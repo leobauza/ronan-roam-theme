@@ -1,3 +1,11 @@
+/*
+@TODO: decide whether this is a good idea 
+.rm-page-ref,
+.rm-attr-ref {
+  font-size: 87.5%;
+} 
+*/
+
 /* Ref Links */
 .rm-page-ref__brackets {
   @apply text-gray-200;
@@ -9,7 +17,7 @@
 
   background-position: 0 0.9em;
   background-repeat: no-repeat;
-  background-size: 0% 4px;
+  background-size: 0% 7px;
 
   &:hover {
     @apply no-underline;
