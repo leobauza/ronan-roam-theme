@@ -6,11 +6,25 @@
   @apply rounded-md;
 }
 
+/**
+ * Title above page reference
+ * see: link.css for link hover effect
+ */
+.rm-mentions .rm-ref-page-view {
+  &.rm-ref-page-view-title {
+    @apply text-xl;
+  }
+
+  &.rm-title-arrow-wrapper {
+    @apply mb-4;
+  }
+}
+
 /* Reference breadcrumb */
 .rm-zoom.zoom-mentions-view {
-  @apply m-0;
+  @apply mx-0 mt-0 mb-4;
 
-  font-size: 90%;
+  font-size: 84%;
 
   /* Ref atts in breadcrumbs need extra left hand space for arrow tail */
   & .rm-attr-ref:first-child {
@@ -19,6 +33,8 @@
 }
 
 .rm-zoom .rm-zoom-item {
+  @apply mb-1;
+
   color: inherit;
 }
 
