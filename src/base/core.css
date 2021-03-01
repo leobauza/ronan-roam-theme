@@ -5,6 +5,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font-size: 100%;
+  line-height: 1.15;
+}
+
 /* For tailwind borders to work */
 *,
 :after,

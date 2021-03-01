@@ -1,1 +1,83 @@
-/* @TODO */
+/* Global overrides */
+.roam-body .roam-app {
+  & h1 {
+    @apply text-gray-900;
+  }
+}
+
+/* h1 */
+.rm-level1,
+.rm-heading-level-1 {
+  & > .rm-block__self {
+    /* Fix bullet position */
+    & .controls,
+    & .rm-block__controls {
+      @apply pt-3;
+    }
+
+    & .rm-block__input {
+      @apply font-bold;
+      @apply mb-3;
+      @apply text-3xl;
+      @apply text-gray-700;
+    }
+  }
+}
+
+/* h2 */
+.rm-level2,
+.rm-heading-level-2 {
+  & > .rm-block__self {
+    /* Fix bullet position */
+    & .controls,
+    & .rm-block__controls {
+      @apply pt-2;
+    }
+
+    & .rm-block__input {
+      @apply font-semibold;
+      @apply mb-2;
+      @apply text-2xl;
+      @apply text-gray-600;
+    }
+  }
+}
+
+/* h3 */
+.rm-level3,
+.rm-heading-level-3 {
+  & > .rm-block__self {
+    /* Fix bullet position */
+    & .controls,
+    & .rm-block__controls {
+      padding-top: 6px;
+    }
+
+    & .rm-block__input {
+      @apply font-medium;
+      @apply mb-1;
+      @apply text-xl;
+      @apply text-gray-500;
+    }
+  }
+}
+
+/* text */
+.rm-highlight {
+  @apply bg-yellow-100;
+}
+
+/* Correct line-height */
+.rm-level1,
+.rm-heading-level-1,
+.rm-level2,
+.rm-heading-level-2,
+.rm-level3,
+.rm-heading-level-3 {
+  & > .rm-block__self {
+    /* Fix bullet position */
+    & .rm-block__input {
+      @apply leading-normal;
+    }
+  }
+}

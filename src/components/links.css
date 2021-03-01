@@ -53,6 +53,7 @@
   @apply pl-2 pr-1;
   @apply mr-1;
   @apply text-gray-700;
+  @apply font-medium;
 
   &:hover {
     &::before,
@@ -95,6 +96,7 @@
   @apply text-gray-700;
   @apply py-1 px-2;
   @apply rounded-md;
+  @apply font-medium;
 
   &:hover {
     @apply text-white;

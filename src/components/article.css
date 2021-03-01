@@ -1,0 +1,15 @@
+.roam-body .roam-app {
+  & .roam-main {
+    & .roam-article {
+      & .rm-title-display {
+        @apply mb-8;
+      }
+    }
+  }
+}
+
+.rm-title-display {
+  @apply font-light;
+  @apply text-xl;
+  @apply tracking-wider;
+}
