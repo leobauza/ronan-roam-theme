@@ -58,7 +58,7 @@
   &:hover {
     &::before,
     &::after {
-      @apply bg-opacity-20;
+      @apply bg-opacity-50;
     }
   }
 
@@ -67,8 +67,8 @@
     @apply transition-colors duration-200;
     @apply absolute;
     @apply block;
-    @apply bg-gray-200;
-    @apply bg-opacity-0;
+    @apply bg-white;
+    @apply bg-opacity-20;
     @apply w-full h-1/2;
     @apply transform;
 

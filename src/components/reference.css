@@ -1,8 +1,12 @@
 /* References at bottom of page */
-.rm-reference-item {
+.rm-mentions .rm-ref-page-view {
   @apply m-0;
+}
+
+.rm-reference-item {
+  @apply mx-0 mt-0 mb-2;
   @apply p-2;
-  @apply bg-gray-50;
+  @apply bg-blue-50;
   @apply rounded-md;
 }
 
@@ -11,18 +15,18 @@
  * see: link.css for link hover effect
  */
 .rm-mentions .rm-ref-page-view {
-  &.rm-ref-page-view-title {
-    @apply text-xl;
+  & .rm-ref-page-view-title {
+    @apply text-lg;
   }
 
-  &.rm-title-arrow-wrapper {
-    @apply mb-4;
+  & .rm-title-arrow-wrapper {
+    @apply mb-2;
   }
 }
 
 /* Reference breadcrumb */
 .rm-zoom.zoom-mentions-view {
-  @apply mx-0 mt-0 mb-4;
+  @apply mx-0 mt-0 mb-2;
 
   font-size: 84%;
 
