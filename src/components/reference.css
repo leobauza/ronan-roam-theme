@@ -34,6 +34,12 @@
   & .rm-attr-ref:first-child {
     @apply ml-1;
   }
+
+  /* Arrow divider */
+  & .rm-mention-icon {
+    @apply text-xs;
+    @apply px-1;
+  }
 }
 
 .rm-zoom .rm-zoom-item {
