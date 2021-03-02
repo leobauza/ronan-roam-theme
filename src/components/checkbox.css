@@ -19,7 +19,12 @@
 }
 
 .checkmark {
+  @apply transition-shadow duration-200;
   @apply border border-gray-300;
   @apply bg-white;
   @apply rounded-md;
+
+  &:hover {
+    @apply shadow-outline;
+  }
 }
