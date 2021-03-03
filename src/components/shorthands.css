@@ -50,7 +50,34 @@
   }
 }
 
+/* Autocomplete dropdown */
+[title='@'],
+[title='!'],
+[title='~'],
+[title='+'],
+[title='%'],
+[title='&'] {
+  & .rm-autocomplete-result {
+    &::after {
+      @apply bg-gray-50;
+      @apply border border-gray-50;
+      @apply inline-block;
+      @apply ml-1;
+      @apply py-1 px-2;
+      @apply rounded-md;
+      @apply text-gray-700;
+      @apply text-sm;
+    }
+  }
+}
+
 /* Read / Watched */
+[title='@'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-at);
+  }
+}
+
 .rm-page-ref--tag[data-tag='@'] {
   @apply bg-blue-50;
   @apply text-blue-700;
@@ -79,10 +106,16 @@
 }
 
 /* Currently */
+[title='!'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-bang);
+  }
+}
+
 .rm-page-ref--tag[data-tag='!'] {
   @apply bg-yellow-50;
   @apply text-yellow-700;
-  
+
   &::after {
     content: var(--shorthand-bang);
   }
@@ -107,6 +140,12 @@
 }
 
 /* Unread / Not Watched */
+[title='~'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-tilde);
+  }
+}
+
 .rm-page-ref--tag[data-tag='~'] {
   @apply bg-red-50;
   @apply text-red-700;
@@ -135,6 +174,12 @@
 }
 
 /* Active Project */
+[title='+'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-plus);
+  }
+}
+
 .rm-page-ref--tag[data-tag='+'] {
   @apply bg-blue-50;
   @apply text-blue-700;
@@ -163,6 +208,12 @@
 }
 
 /* Project Needs Definition */
+[title='%'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-percent);
+  }
+}
+
 .rm-page-ref--tag[data-tag='%'] {
   @apply bg-red-50;
   @apply text-red-700;
@@ -191,6 +242,12 @@
 }
 
 /* Upcoming Project */
+[title='&'] .rm-autocomplete-result {
+  &::after {
+    content: var(--shorthand-amp);
+  }
+}
+
 .rm-page-ref--tag[data-tag='&'] {
   @apply bg-yellow-50;
   @apply text-yellow-700;

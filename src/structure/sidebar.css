@@ -6,7 +6,7 @@
 
   & .roam-sidebar-container {
     bottom: 0 !important;
-    box-shadow: none !important;
+    /* box-shadow: none !important; */
   }
 
   /* Sidebar Content */
