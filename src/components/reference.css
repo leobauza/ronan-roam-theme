@@ -25,6 +25,7 @@
 }
 
 /* Reference breadcrumb */
+.rm-zoom.zoom-path-view,
 .rm-zoom.zoom-mentions-view {
   @apply mx-0 mt-0 mb-2;
 
@@ -41,6 +42,11 @@
     @apply px-1;
   }
 }
+
+.rm-zoom.zoom-path-view {
+  @apply mt-2;
+}
+
 
 .rm-zoom .rm-zoom-item {
   @apply mb-1;
