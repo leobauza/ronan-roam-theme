@@ -73,3 +73,79 @@
 .bp3-icon-eye-open::before {
   content: var(--icon-eye-open);
 }
+
+.bp3-icon-tick::before {
+  content: var(--icon-tick);
+}
+
+.bp3-icon-git-new-branch::before {
+  content: var(--icon-git-new-branch);
+}
+
+.bp3-icon-new-link::before {
+  content: var(--icon-new-link);
+}
+
+.bp3-icon-new-layers::before {
+  content: var(--icon-new-layers);
+}
+
+.bp3-icon-translate::before {
+  content: var(--icon-translate);
+}
+
+.bp3-icon-time::before {
+  content: var(--icon-time);
+}
+
+.bp3-icon-stopwatch::before {
+  content: var(--icon-stopwatch);
+}
+
+.bp3-icon-issue-new::before {
+  content: var(--icon-issue-new);
+}
+
+.bp3-icon-fast-forward::before {
+  content: var(--icon-fast-forward);
+}
+
+.bp3-icon-fast-backward::before {
+  content: var(--icon-fast-backward);
+}
+
+.bp3-icon-bold::before {
+  content: var(--icon-bold);
+}
+
+.bp3-icon-italic::before {
+  content: var(--icon-italic);
+}
+
+.bp3-icon-highlight::before {
+  content: var(--icon-highlight);
+}
+
+.bp3-icon-code-block::before {
+  content: var(--icon-code-block);
+}
+
+.bp3-icon-function::before {
+  content: var(--icon-function);
+}
+
+.bp3-icon-calculator::before {
+  content: var(--icon-calculator);
+}
+
+.bp3-icon-cloud-upload::before {
+  content: var(--icon-cloud-upload);
+}
+
+.bp3-icon-\:strikethrough::before {
+  content: var(--icon-strikethrough);
+}
+
+.bp3-icon-\:code::before {
+  content: var(--icon-code);
+}

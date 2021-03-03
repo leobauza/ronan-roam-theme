@@ -20,6 +20,26 @@
   --icon-trash: '🗑';
   --icon-export: '📤';
   --icon-eye-open: '👀';
+  /* dropdown icons */
+  --icon-tick: '✅';
+  --icon-git-new-branch: '☝🏽';
+  --icon-new-link: '👇🏽';
+  --icon-new-layers: '🛏';
+  --icon-translate: '♊️';
+  --icon-time: '⏰';
+  --icon-stopwatch: '⏱';
+  --icon-issue-new: '▶️';
+  --icon-fast-forward: '⏭';
+  --icon-fast-backward: '⏮';
+  --icon-bold: '🅱️';
+  --icon-italic: '🇮🇹';
+  --icon-highlight: '🔦';
+  --icon-code-block: '🧱';
+  --icon-function: '💻';
+  --icon-calculator: '🧮';
+  --icon-cloud-upload: '🌩';
+  --icon-strikethrough: '🖊';
+  --icon-code: '⌨️';
   /* shorthands */
   --shorthand-at: 'Read/Watched';
   --shorthand-bang: 'Currently';
