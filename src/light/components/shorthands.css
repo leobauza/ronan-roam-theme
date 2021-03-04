@@ -1,0 +1,146 @@
+/* Only tags */
+.rm-page-ref--tag[data-tag='@'],
+.rm-page-ref--tag[data-tag='!'],
+.rm-page-ref--tag[data-tag='~'],
+.rm-page-ref--tag[data-tag='+'],
+.rm-page-ref--tag[data-tag='%'],
+.rm-page-ref--tag[data-tag='&'] {
+  &:hover {
+    @apply text-white;
+  }
+}
+
+/* Autocomplete dropdown */
+[title='@'],
+[title='!'],
+[title='~'],
+[title='+'],
+[title='%'],
+[title='&'] {
+  & .rm-autocomplete-result {
+    &::after {
+      @apply bg-gray-50;
+      @apply border border-gray-50;
+      @apply text-gray-700;
+    }
+  }
+}
+
+.rm-page-ref--tag[data-tag='@'] {
+  @apply bg-blue-50;
+  @apply text-blue-700;
+
+  &:hover {
+    @apply bg-blue-700;
+  }
+}
+
+[data-link-title='@'] .rm-page-ref--link {
+  @apply text-blue-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.100') 100%,
+    transparent 0%
+  );
+}
+
+/* Currently */
+.rm-page-ref--tag[data-tag='!'] {
+  @apply bg-yellow-50;
+  @apply text-yellow-700;
+
+  &:hover {
+    @apply bg-yellow-700;
+  }
+}
+
+[data-link-title='!'] .rm-page-ref--link {
+  @apply text-yellow-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.yellow.100') 100%,
+    transparent 0%
+  );
+}
+
+/* Unread / Not Watched */
+.rm-page-ref--tag[data-tag='~'] {
+  @apply bg-red-50;
+  @apply text-red-700;
+
+  &:hover {
+    @apply bg-red-700;
+  }
+}
+
+[data-link-title='~'] .rm-page-ref--link {
+  @apply text-red-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+}
+
+/* Active Project */
+.rm-page-ref--tag[data-tag='+'] {
+  @apply bg-blue-50;
+  @apply text-blue-700;
+
+  &:hover {
+    @apply bg-blue-700;
+  }
+}
+
+[data-link-title='+'] .rm-page-ref--link {
+  @apply text-blue-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.100') 100%,
+    transparent 0%
+  );
+}
+
+/* Project Needs Definition */
+.rm-page-ref--tag[data-tag='%'] {
+  @apply bg-red-50;
+  @apply text-red-700;
+
+  &:hover {
+    @apply bg-red-700;
+  }
+}
+
+[data-link-title='%'] .rm-page-ref--link {
+  @apply text-red-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+}
+
+/* Upcoming Project */
+.rm-page-ref--tag[data-tag='&'] {
+  @apply bg-yellow-50;
+  @apply text-yellow-700;
+
+  &:hover {
+    @apply bg-yellow-700;
+  }
+}
+
+[data-link-title='&'] .rm-page-ref--link {
+  @apply text-yellow-700;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.yellow.100') 100%,
+    transparent 0%
+  );
+}

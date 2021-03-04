@@ -1,0 +1,170 @@
+/* Only tags */
+.rm-page-ref--tag[data-tag='@'],
+.rm-page-ref--tag[data-tag='!'],
+.rm-page-ref--tag[data-tag='~'],
+.rm-page-ref--tag[data-tag='+'],
+.rm-page-ref--tag[data-tag='%'],
+.rm-page-ref--tag[data-tag='&'] {
+  &:hover {
+    @apply text-white;
+  }
+}
+
+/* Autocomplete dropdown */
+[title='@'],
+[title='!'],
+[title='~'],
+[title='+'],
+[title='%'],
+[title='&'] {
+  & .rm-autocomplete-result {
+    &::after {
+      @apply bg-gray-900;
+      @apply border border-gray-900;
+      @apply text-gray-50;
+    }
+  }
+}
+
+.rm-page-ref--tag[data-tag='@'] {
+  @apply bg-blue-700;
+  @apply text-blue-50;
+
+  &:hover {
+    @apply bg-blue-900;
+  }
+}
+
+[data-link-title='@'] .rm-page-ref--link {
+  @apply text-blue-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.500') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-blue-50;
+  }
+}
+
+/* Currently */
+.rm-page-ref--tag[data-tag='!'] {
+  @apply bg-green-700;
+  @apply text-green-50;
+
+  &:hover {
+    @apply bg-green-900;
+  }
+}
+
+[data-link-title='!'] .rm-page-ref--link {
+  @apply text-green-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.green.500') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-green-50;
+  }
+}
+
+/* Unread / Not Watched */
+.rm-page-ref--tag[data-tag='~'] {
+  @apply bg-red-700;
+  @apply text-red-50;
+
+  &:hover {
+    @apply bg-red-900;
+  }
+}
+
+[data-link-title='~'] .rm-page-ref--link {
+  @apply text-red-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.500') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-red-50;
+  }
+}
+
+/* Active Project */
+.rm-page-ref--tag[data-tag='+'] {
+  @apply bg-blue-700;
+  @apply text-blue-50;
+
+  &:hover {
+    @apply bg-blue-900;
+  }
+}
+
+[data-link-title='+'] .rm-page-ref--link {
+  @apply text-blue-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.blue.500') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-blue-50;
+  }
+}
+
+/* Project Needs Definition */
+.rm-page-ref--tag[data-tag='%'] {
+  @apply bg-red-700;
+  @apply text-red-50;
+
+  &:hover {
+    @apply bg-red-900;
+  }
+}
+
+[data-link-title='%'] .rm-page-ref--link {
+  @apply text-red-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.500') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-red-50;
+  }
+}
+
+/* Upcoming Project */
+.rm-page-ref--tag[data-tag='&'] {
+  @apply bg-green-700;
+  @apply text-green-50;
+
+  &:hover {
+    @apply bg-green-900;
+  }
+}
+
+[data-link-title='&'] .rm-page-ref--link {
+  @apply text-green-400;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.green.50') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-green-50;
+  }
+}
