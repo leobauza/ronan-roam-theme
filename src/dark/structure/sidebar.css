@@ -9,7 +9,7 @@
     & .top-row {
       & .rm-db-title,
       & .rm-db-title .expand-icon {
-        @apply text-gray-500;
+        @apply text-gray-400;
       }
     }
 
@@ -23,7 +23,7 @@
     }
 
     & .log-button {
-      @apply text-gray-500;
+      @apply text-gray-400;
 
       &:hover {
         @apply bg-blue-700;
@@ -35,14 +35,14 @@
       /* Starred pages title */
       & > .flex-h-box {
         & span {
-          @apply text-gray-500;
+          @apply text-gray-400;
         }
       }
 
       /* Starred pages links */
       & .starred-pages {
         & .page {
-          @apply text-gray-500;
+          @apply text-gray-400;
 
           &:hover {
             @apply bg-blue-700;

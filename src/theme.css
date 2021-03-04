@@ -9,4 +9,7 @@
 @import 'light/structure/*' (prefers-color-scheme: light);
 @import 'dark/structure/*' (prefers-color-scheme: dark);
 
+@import 'light/components/*' (prefers-color-scheme: light);
+@import 'dark/components/*' (prefers-color-scheme: dark);
+
 /* @import 'dark-test.css' (prefers-color-scheme: dark); */

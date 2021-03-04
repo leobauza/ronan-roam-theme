@@ -1,5 +1,6 @@
 .roam-body {
   & .roam-app {
+    @apply bg-gray-50;
     @apply text-gray-700;
   }
 }

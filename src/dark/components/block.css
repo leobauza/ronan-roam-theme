@@ -1,0 +1,29 @@
+/* Expand icon and bullet */
+.block-expand {
+  & .bp3-icon-caret-down {
+    &::before {
+      @apply text-gray-500;
+    }
+  }
+}
+
+.rm-bullet {
+  &.rm-bullet--closed {
+    & .rm-bullet__inner {
+      @apply border-gray-900;
+    }
+  }
+}
+
+.rm-bullet__inner {
+  @apply bg-gray-500;
+}
+
+/* Change color and increase touch area of collapse lines */
+.rm-multibar {
+  @apply border-gray-700;
+
+  &:hover {
+    @apply border-gray-700;
+  }
+}
