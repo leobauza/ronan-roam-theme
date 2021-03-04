@@ -1,7 +1,7 @@
 .roam-body .roam-app {
   /* Sidebar Container */
   & .roam-sidebar-container {
-    @apply bg-gray-50;
+    /* @apply bg-gray-50; */
   }
 
   & .roam-sidebar-container {
@@ -19,17 +19,17 @@
       & .rm-db-title,
       & .rm-db-title .expand-icon {
         @apply transition-colors duration-200;
-        @apply text-gray-500;
+        /* @apply text-gray-500; */
         @apply font-light;
       }
     }
 
     & .top-row:hover {
-      @apply bg-blue-50;
+      /* @apply bg-blue-50; */
 
       & .rm-db-title,
       & .rm-db-title .expand-icon {
-        @apply text-blue-700;
+        /* @apply text-blue-700; */
       }
     }
 
@@ -37,14 +37,14 @@
       @apply font-black;
       @apply py-4 px-5;
       @apply rounded-r-md;
-      @apply text-gray-500;
+      /* @apply text-gray-500; */
       @apply text-xs;
       @apply tracking-wider;
       @apply transition-colors duration-200;
 
       &:hover {
-        @apply bg-blue-50;
-        @apply text-blue-700;
+        /* @apply bg-blue-50; */
+        /* @apply text-blue-700; */
       }
 
       /* Graph Overview */
@@ -60,7 +60,7 @@
 
         & span {
           @apply font-black;
-          @apply text-gray-500;
+          /* @apply text-gray-500; */
           @apply text-xs;
           @apply tracking-wider;
         }
@@ -72,14 +72,14 @@
 
         & .page {
           @apply rounded-md;
-          @apply text-gray-500;
+          /* @apply text-gray-500; */
           @apply transition-colors duration-200;
           @apply text-base;
           @apply py-2 px-4;
 
           &:hover {
-            @apply bg-blue-50;
-            @apply text-blue-700;
+            /* @apply bg-blue-50; */
+            /* @apply text-blue-700; */
           }
         }
       }
@@ -93,7 +93,7 @@
   }
 
   & > div:nth-child(2) {
-    @apply border-t border-gray-200;
+    /* @apply border-t border-gray-200; */
   }
 }
 

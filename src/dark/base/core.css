@@ -1,0 +1,5 @@
+.roam-body {
+  & .roam-app {
+    @apply text-gray-200;
+  }
+}

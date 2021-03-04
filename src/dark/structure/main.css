@@ -1,0 +1,13 @@
+.roam-main {
+  @apply bg-gray-900;
+}
+
+.roam-body .roam-app {
+  & .roam-body-main {
+    /* Make main area look like a card */
+    & > div {
+      @apply bg-gray-800;
+      @apply border border-gray-800;
+    }
+  }
+}

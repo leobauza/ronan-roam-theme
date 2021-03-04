@@ -1,0 +1,41 @@
+/* Global overrides */
+.roam-body .roam-app {
+  & h1 {
+    @apply text-gray-900;
+  }
+}
+
+/* h1 */
+.rm-level1,
+.rm-heading-level-1 {
+  & > .rm-block__self {
+    & .rm-block__input {
+      @apply text-gray-700;
+    }
+  }
+}
+
+/* h2 */
+.rm-level2,
+.rm-heading-level-2 {
+  & > .rm-block__self {
+    & .rm-block__input {
+      @apply text-gray-600;
+    }
+  }
+}
+
+/* h3 */
+.rm-level3,
+.rm-heading-level-3 {
+  & > .rm-block__self {
+    & .rm-block__input {
+      @apply text-gray-500;
+    }
+  }
+}
+
+/* text */
+.rm-highlight {
+  @apply bg-yellow-100;
+}

@@ -1,5 +1,5 @@
 .roam-main {
-  @apply bg-gray-50;
+  /* @apply bg-gray-50; */
 }
 
 /* Top Bar */
@@ -21,10 +21,10 @@
 
     /* Make main area look like a card */
     & > div {
-      @apply bg-white;
+      /* @apply bg-white; */
       @apply rounded-md;
       @apply shadow-lg;
-      @apply border border-gray-200;
+      /* @apply border border-gray-200; */
     }
 
     & .rm-all-pages {

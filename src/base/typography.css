@@ -1,7 +1,7 @@
 /* Global overrides */
 .roam-body .roam-app {
   & h1 {
-    @apply text-gray-900;
+    /* @apply text-gray-900; */
   }
 }
 
@@ -19,7 +19,7 @@
       @apply font-bold;
       @apply mb-3;
       @apply text-3xl;
-      @apply text-gray-700;
+      /* @apply text-gray-700; */
     }
   }
 }
@@ -38,7 +38,7 @@
       @apply font-semibold;
       @apply mb-2;
       @apply text-2xl;
-      @apply text-gray-600;
+      /* @apply text-gray-600; */
     }
   }
 }
@@ -57,14 +57,14 @@
       @apply font-medium;
       @apply mb-1;
       @apply text-xl;
-      @apply text-gray-500;
+      /* @apply text-gray-500; */
     }
   }
 }
 
 /* text */
 .rm-highlight {
-  @apply bg-yellow-100;
+  /* @apply bg-yellow-100; */
 }
 
 /* Correct line-height */

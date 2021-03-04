@@ -1,0 +1,12 @@
+.roam-main {
+  @apply bg-gray-50;
+}
+
+.roam-body .roam-app {
+  & .roam-body-main {
+    & > div {
+      @apply bg-white;
+      @apply border border-gray-200;
+    }
+  }
+}

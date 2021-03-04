@@ -3,4 +3,10 @@
 @import 'structure/*';
 @import 'components/*';
 
+@import 'light/base/*' (prefers-color-scheme: light);
+@import 'dark/base/*' (prefers-color-scheme: dark);
+
+@import 'light/structure/*' (prefers-color-scheme: light);
+@import 'dark/structure/*' (prefers-color-scheme: dark);
+
 /* @import 'dark-test.css' (prefers-color-scheme: dark); */

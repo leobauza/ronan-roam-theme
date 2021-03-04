@@ -26,7 +26,7 @@ textarea
 }
 
 .roam-body {
-}
-
-.roam-app {
+  & .roam-app {
+    /* @apply text-gray-700; */
+  }
 }

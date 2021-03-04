@@ -1,0 +1,61 @@
+.roam-body .roam-app {
+  /* Sidebar Container */
+  & .roam-sidebar-container {
+    @apply bg-gray-900;
+  }
+
+  /* Sidebar Content */
+  & .roam-sidebar-container .roam-sidebar-content {
+    & .top-row {
+      & .rm-db-title,
+      & .rm-db-title .expand-icon {
+        @apply text-gray-500;
+      }
+    }
+
+    & .top-row:hover {
+      @apply bg-blue-700;
+
+      & .rm-db-title,
+      & .rm-db-title .expand-icon {
+        @apply text-blue-50;
+      }
+    }
+
+    & .log-button {
+      @apply text-gray-500;
+
+      &:hover {
+        @apply bg-blue-700;
+        @apply text-blue-50;
+      }
+    }
+
+    & .starred-pages-wrapper {
+      /* Starred pages title */
+      & > .flex-h-box {
+        & span {
+          @apply text-gray-500;
+        }
+      }
+
+      /* Starred pages links */
+      & .starred-pages {
+        & .page {
+          @apply text-gray-500;
+
+          &:hover {
+            @apply bg-blue-700;
+            @apply text-blue-50;
+          }
+        }
+      }
+    }
+  }
+}
+
+.starred-pages-wrapper {
+  & > div:nth-child(2) {
+    @apply border-t border-gray-700;
+  }
+}

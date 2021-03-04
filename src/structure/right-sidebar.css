@@ -1,5 +1,5 @@
 #right-sidebar {
-  @apply bg-gray-50;
+  /* @apply bg-gray-50; */
 
   /* Fix broken rule in default */
   .rm-resize-handle {
