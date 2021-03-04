@@ -1,0 +1,73 @@
+/* Ref Links */
+.rm-page-ref__brackets {
+  @apply text-gray-200;
+}
+
+.rm-page-ref--namespace {
+  @apply text-red-500;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.red.100') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-red-900;
+  }
+}
+
+/* Ref Attr */
+.rm-attr-ref {
+  @apply text-gray-700;
+
+  &:hover {
+    &::before,
+    &::after {
+      @apply bg-opacity-50;
+    }
+  }
+
+  &::before,
+  &::after {
+    @apply bg-white;
+    @apply bg-opacity-20;
+  }
+
+  &::before {
+    @apply border-l border-r border-t border-gray-200;
+  }
+
+  &::after {
+    @apply border-l border-r border-b border-gray-200;
+  }
+}
+
+/* Ref Tags */
+.rm-page-ref--tag {
+  @apply bg-gray-50;
+  @apply text-gray-700;
+
+  &:hover {
+    @apply text-white;
+    @apply bg-gray-700;
+  }
+}
+
+/* All Links */
+.rm-page-ref--link,
+.rm-ref-page-view-title a,
+a[target='_blank'],
+a.rm-alias.rm-alias--external {
+  @apply text-indigo-500;
+
+  background-image: linear-gradient(
+    to right,
+    theme('textColor.indigo.100') 100%,
+    transparent 0%
+  );
+
+  &:hover {
+    @apply text-indigo-900;
+  }
+}

@@ -1,48 +1,33 @@
 /* Ref Links */
 .rm-page-ref__brackets {
-  @apply text-gray-200;
-}
-
-.rm-page-ref--link,
-.rm-page-ref--namespace {
-  @apply transition-all duration-500;
-
-  background-position: 0 0.9em;
-  background-repeat: no-repeat;
-  background-size: 0% 7px;
-
-  &:hover {
-    @apply no-underline;
-
-    background-size: 100% 7px;
-  }
+  /* @apply text-gray-200; */
 }
 
 .rm-page-ref--link {
-  @apply text-indigo-500;
+  /* @apply text-indigo-500; */
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     theme('textColor.indigo.100') 100%,
     transparent 0%
-  );
+  ); */
 
   &:hover {
-    @apply text-indigo-900;
+    /* @apply text-indigo-900; */
   }
 }
 
 .rm-page-ref--namespace {
-  @apply text-red-500;
+  /* @apply text-red-500; */
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     theme('textColor.red.100') 100%,
     transparent 0%
-  );
+  ); */
 
   &:hover {
-    @apply text-red-900;
+    /* @apply text-red-900; */
   }
 }
 
@@ -52,13 +37,13 @@
   @apply inline-block;
   @apply px-2;
   @apply mr-1;
-  @apply text-gray-700;
+  /* @apply text-gray-700; */
   @apply font-medium;
 
   &:hover {
     &::before,
     &::after {
-      @apply bg-opacity-50;
+      /* @apply bg-opacity-50; */
     }
   }
 
@@ -67,8 +52,8 @@
     @apply transition-colors duration-200;
     @apply absolute;
     @apply block;
-    @apply bg-white;
-    @apply bg-opacity-20;
+    /* @apply bg-white;
+    @apply bg-opacity-20; */
     @apply w-full h-1/2;
     @apply transform;
 
@@ -76,13 +61,13 @@
   }
 
   &::before {
-    @apply border-l border-r border-t border-gray-200;
+    /* @apply border-l border-r border-t border-gray-200; */
     @apply top-0 left-0;
     @apply skew-x-20;
   }
 
   &::after {
-    @apply border-l border-r border-b border-gray-200;
+    /* @apply border-l border-r border-b border-gray-200; */
     @apply bottom-0 left-0;
     @apply -skew-x-20;
   }
@@ -91,37 +76,39 @@
 /* Ref Tags */
 .rm-page-ref--tag {
   @apply transition-colors duration-200;
-  @apply bg-gray-50;
-  @apply text-gray-700;
+  /* @apply bg-gray-50; */
+  /* @apply text-gray-700; */
   @apply py-1 px-2;
   @apply rounded-md;
   @apply font-medium;
 
   &:hover {
-    @apply text-white;
-    @apply bg-gray-700;
+    /* @apply text-white; */
+    /* @apply bg-gray-700; */
     @apply no-underline;
   }
 }
 
 /* All Links */
+.rm-page-ref--link,
+.rm-page-ref--namespace,
 .rm-ref-page-view-title a,
 a[target='_blank'],
 a.rm-alias.rm-alias--external {
   @apply transition-all duration-500;
-  @apply text-indigo-500;
+  /* @apply text-indigo-500; */
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     theme('textColor.indigo.100') 100%,
     transparent 0%
-  );
+  ); */
   background-position: 0 0.9em;
   background-repeat: no-repeat;
-  background-size: 0% 4px;
+  background-size: 0% 7px;
 
   &:hover {
-    @apply text-indigo-900;
+    /* @apply text-indigo-900; */
     @apply no-underline;
 
     background-size: 100% 7px;
