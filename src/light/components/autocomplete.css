@@ -1,0 +1,7 @@
+.rm-autocomplete__wrapper .bp3-elevation-3 {
+  @apply border-2 border-gray-200;
+  @apply text-gray-700;
+
+  /* gray-50 (fighting inline styles) */
+  background: #F9FAFB!important;
+}

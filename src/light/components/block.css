@@ -27,3 +27,8 @@
     @apply border-gray-500;
   }
 }
+
+/* highlight */
+.block-highlight-blue {
+  @apply bg-blue-50;
+}
