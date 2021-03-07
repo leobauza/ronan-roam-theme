@@ -1,0 +1,14 @@
+/* References at bottom of page */
+.rm-reference-item {
+  @apply bg-gray-800;
+  @apply border-2 border-gray-900;
+}
+
+/* Block references */
+.rm-block-ref {
+  @apply border-b border-gray-700;
+
+  &:hover {
+    @apply bg-gray-900;
+  }
+}

@@ -1,0 +1,9 @@
+/* References at bottom of page */
+.rm-reference-item {
+  @apply bg-blue-50;
+}
+
+/* Block references */
+.rm-block-ref {
+  @apply border-b border-gray-200;
+}

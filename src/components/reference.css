@@ -6,7 +6,7 @@
 .rm-reference-item {
   @apply mx-0 mt-0 mb-2;
   @apply p-2;
-  @apply bg-blue-50;
+  /* @apply bg-blue-50; */
   @apply rounded-md;
 }
 
@@ -60,5 +60,5 @@
 
 /* Block references */
 .rm-block-ref {
-  @apply border-gray-200;
+  /* @apply border-gray-200; */
 }
