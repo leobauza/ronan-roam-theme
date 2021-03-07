@@ -1,0 +1,8 @@
+/* global search */
+.bp3-input#find-or-create-input,
+/* all pages search */
+.rm-pages-toolbar .toolbar-search-group .search-input {
+  @apply bg-white;
+  @apply border border-gray-200;
+  @apply text-gray-700;
+}

@@ -3,8 +3,8 @@
   /* Needs to override a border: 0 on .bp-input */
   border: 1px solid transparent;
 
-  @apply bg-white;
-  @apply border border-gray-200;
+  /* @apply bg-white; */
+  /* @apply border border-gray-200; */
   @apply rounded-md;
   @apply shadow-none;
   @apply text-base;
@@ -22,8 +22,8 @@
   /* Needs to override a border: 0 on .bp3-input */
   border: 1px solid transparent;
 
-  @apply bg-white;
-  @apply border border-gray-200;
+  /* @apply bg-white; */
+  /* @apply border border-gray-200; */
   @apply rounded-md;
   @apply text-base;
 }
