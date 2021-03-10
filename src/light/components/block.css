@@ -28,7 +28,11 @@
   }
 }
 
-/* highlight */
+/* highlights */
 .block-highlight-blue {
   @apply bg-blue-50;
+}
+
+.block-highlight-grey {
+  @apply bg-gray-200;
 }

@@ -81,3 +81,8 @@
     }
   }
 }
+
+code {
+  @apply border-none;
+  @apply py-1 px-2;
+}

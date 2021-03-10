@@ -12,9 +12,9 @@ module.exports = ({ options }) => {
         'nesting-rules': true,
       },
     }),
-    // cssnano({
-    //   preset: 'default',
-    // }),
+    cssnano({
+      preset: 'default',
+    }),
   ]
 
   return {
