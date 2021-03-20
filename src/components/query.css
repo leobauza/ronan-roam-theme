@@ -1,13 +1,22 @@
 .rm-query {
-  & .controls.rm-block__controls {
-    /* needs to be possitioned */
+  @apply border-4 border-gray-900;
+  @apply rounded-md;
+
+  & .rm-query-title {
+    @apply bg-gray-900;
+    @apply text-gray-200;
+    @apply text-sm;
   }
-}
 
-.rm-query-title {
+  & .rm-query-content {
+    @apply px-2;
+  }
 
-}
+  & .rm-reference-item {
+    @apply border-none;
+  }
 
-.rm-query-content {
-
+  & .controls.rm-block__controls {
+    @apply pt-2;
+  }
 }
