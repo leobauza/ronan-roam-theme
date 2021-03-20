@@ -149,3 +149,7 @@
 .bp3-icon-\:code::before {
   content: var(--icon-code);
 }
+
+.bp3-icon-horizontal-distribution::before {
+  content: var(--horizontal-distribution);
+}

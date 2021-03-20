@@ -16,7 +16,7 @@
  */
 .rm-mentions .rm-ref-page-view {
   & .rm-ref-page-view-title {
-    @apply text-lg;
+    @apply text-2xl;
   }
 
   & .rm-title-arrow-wrapper {
