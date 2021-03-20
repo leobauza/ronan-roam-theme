@@ -1,0 +1,13 @@
+.rm-query {
+  & .controls.rm-block__controls {
+    /* needs to be possitioned */
+  }
+}
+
+.rm-query-title {
+
+}
+
+.rm-query-content {
+
+}
