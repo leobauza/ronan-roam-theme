@@ -17,6 +17,8 @@
   }
 
   & .controls.rm-block__controls {
-    @apply pt-2;
+    & .rm-bullet {
+      margin-top: 6px;
+    }
   }
 }
