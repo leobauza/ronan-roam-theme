@@ -12,3 +12,8 @@
     @apply bg-gray-900;
   }
 }
+
+.rm-block__self .rm-block__ref-count {
+  @apply bg-gray-900;
+  @apply text-white;
+}
