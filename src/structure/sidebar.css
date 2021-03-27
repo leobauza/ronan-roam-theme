@@ -6,7 +6,10 @@
 
   & .roam-sidebar-container {
     bottom: 0 !important;
-    /* box-shadow: none !important; */
+
+    &[style*='box-shadow'] {
+      @apply shadow-md !important;
+    }
   }
 
   /* Sidebar Content */
