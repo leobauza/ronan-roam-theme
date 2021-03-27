@@ -2,30 +2,43 @@
   @apply p-0;
   @apply bg-transparent;
 
+  & .kanban-column-container {
+    @apply space-x-4;
+    @apply py-2 px-0;
+  }
+
   & .kanban-column {
-    @apply p-0;
+    @apply p-2;
     @apply m-0;
-    @apply bg-transparent;
+    /* @apply bg-gray-100;
+    @apply border border-gray-200; */
+    @apply rounded;
 
     flex: 1 0 264px;
 
     &[style*='background'] {
-      @apply bg-gray-50 !important;
+      /* @apply bg-blue-50 !important; */
     }
 
     & .kanban-title {
-      @apply p-2;
+      @apply py-1 px-4;
       @apply m-0;
-      @apply bg-gray-50;
-      @apply border-b border-gray-200;
+      @apply bg-transparent;
+      @apply border-none;
+      @apply text-sm;
       @apply min-h-0;
+      @apply text-left;
     }
 
     & .kanban-card {
-      @apply p-4;
+      @apply py-2 px-4;
       @apply mb-2;
       @apply rounded;
-      @apply shadow;
+      /* @apply border border-gray-200; */
+
+      &:hover {
+        @apply shadow-md;
+      }
     }
   }
 }

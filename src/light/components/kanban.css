@@ -1,0 +1,14 @@
+.kanban-board {
+  & .kanban-column {
+    @apply bg-gray-100;
+    @apply border border-gray-200;
+
+    &[style*='background'] {
+      @apply bg-blue-50 !important;
+    }
+
+    & .kanban-card {
+      @apply border border-gray-200;
+    }
+  }
+}
