@@ -36,3 +36,7 @@
 .block-highlight-grey {
   @apply bg-gray-700;
 }
+
+.block-highlight-yellow {
+  @apply bg-yellow-300;
+}
