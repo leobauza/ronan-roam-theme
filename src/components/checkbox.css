@@ -8,7 +8,7 @@
     @apply rounded-md;
   }
 
-  & .checkmark:after {
+  & .checkmark::after {
     /* @apply border-r-4 border-b-4 border-blue-50; */
     @apply left-1;
     @apply transform rotate-45 scale-50;

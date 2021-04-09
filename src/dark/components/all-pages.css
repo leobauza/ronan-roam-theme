@@ -1,0 +1,43 @@
+.rm-all-pages {
+  & .table {
+    @apply bg-gray-900;
+
+    & .rm-pages-row {
+      @apply border-gray-800;
+
+      & .rm-pages-col {
+        @apply text-gray-200;
+      }
+
+      & .rm-pages-title-col,
+      & .rm-pages-title-text {
+        @apply text-white;
+      }
+
+      &.rm-pages-row-header {
+        @apply bg-black;
+
+        & .sorted-header-text {
+          @apply text-gray-100;
+        }
+      }
+    }
+  }
+}
+
+.bp3-control.bp3-checkbox {
+  & .bp3-control-indicator {
+    @apply border border-gray-900;
+    @apply bg-gray-700;
+  }
+
+
+  & input:checked ~ .bp3-control-indicator {
+    @apply bg-blue-600;
+    @apply border-blue-700;
+  }
+
+  & .bp3-control-indicator::after {
+    @apply border-r-4 border-b-4 border-blue-50;
+  }
+}

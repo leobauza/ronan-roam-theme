@@ -30,3 +30,7 @@ textarea
     /* @apply text-gray-700; */
   }
 }
+
+.rm-block-separator {
+  min-width: 24px;
+}
