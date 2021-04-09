@@ -1,0 +1,4 @@
+blockquote.rm-bq {
+  @apply bg-gray-900;
+  @apply border border-gray-900;
+}
