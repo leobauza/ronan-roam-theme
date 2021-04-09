@@ -153,3 +153,25 @@
 .bp3-icon-horizontal-distribution::before {
   content: var(--horizontal-distribution);
 }
+
+.bp3-icon.bp3-icon-menu-open {
+  &::after {
+    display: block;
+    content: var(--icon-menu-open);
+  }
+
+  & svg {
+    display: none;
+  }
+}
+
+.bp3-icon.bp3-icon-menu-closed {
+  &::after {
+    display: block;
+    content: var(--icon-menu-closed);
+  }
+
+  & svg {
+    display: none;
+  }
+}
